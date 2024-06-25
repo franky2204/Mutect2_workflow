@@ -1,0 +1,27 @@
+sam_input:
+  class: File
+  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/input/2201.sam
+genome: 
+  class: File
+  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/hg38/hg38.fa
+threads: 10
+sam_add:
+  class: File
+  path: /media/francesco/Volume/Work/gatk/outputs/2201_GN_FU3_add.sam
+bam_output:
+  class: File
+  path: /media/francesco/Volume/Work/gatk/outputs/2201_GN_FU3_add.bam
+bam_sorted:
+  class: File  
+  path: /media/francesco/Volume/Work/gatk/outputs/2201_GN_FU3_add_add_sort.bam
+bam_index: 
+  #- {class: File, path: /home/francesco/Desktop/mutect/first2002/2002_GN_DIAG_ATCACGAC_sam_add_sort.bam}
+  - {class: File, path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/mid/416_sam_add_sort.bam}
+ 
+mutect_vcf:
+  - {class: File, path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/output/fusion/416.vcf.gz}
+  - {class: File, path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/output/fusion/2201.vcf.gz}
+
+mutect_vcf_unfilterd: 
+  class: File
+  path: /media/francesco/Volume/Work/gatk/prove/Muteq_final_resoult.vcf
