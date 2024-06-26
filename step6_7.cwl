@@ -27,7 +27,7 @@ steps:
         mutect_vcf: mutect_vcf
     out: [vcf_merged]
   filter_vcf:
-    run: cwl/filterMutect2.cwl
+    run: cwl/filterMutect2C.cwl
     in:
         mutect_vcf: merge_vcf/vcf_merged
     out: [vcf_filtered]
