@@ -40,3 +40,6 @@ mutect_fused:
 human_grch38:
   class: File
   path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/Homo_sapiens.GRCh38.110.gtf
+fastq_directory:
+  class: Directory
+  path: /media/francesco/Volume/gatk_try1

@@ -44,23 +44,24 @@ steps:
   from_fastq_to_sam:
     run: cwl/fromFastqToSam.cwl
     scatter: [read_1, read_2]
+    scatterMethod: dotproduct
     in:
       read_1: check-input/read_1
       read_2: check-input/read_2
       genome: genome
       threads: threads
-    out: [sam_file]
+    out: [sam_input]
   pre_mutect2:
     run: cwl/S2PMutect2.cwl
-    scatter: [sam_file]
+    scatter: [sam_input]
     in:
-      sam_file: sam_file
+      sam_input: from_fastq_to_sam/sam_input
       threads: threads
     out: [bam_indexed]
   gatk_run:
     run: cwl/Mutect2v2.cwl
     in:
-        bam_index: bam_indexed
+        bam_index: pre_mutect2/bam_indexed
         genome: genome
         threads: threads
     out: [mutect_vcf, mutect_vcf_stats, mutect_gz_tbi]

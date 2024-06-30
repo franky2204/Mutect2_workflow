@@ -6,8 +6,8 @@ string=""
 
 # Itera attraverso i file nella cartella
 for file in "$folder_path"/*; do #cicla ogni file della cartella
-	if [[ $file =~ 1.f ]]; then #controlla il file contenga nel nome R1, da controllare 
-		r2_file="${file/1.f/2.f}" #crea una stringa rimpiazzando R1 con R2, da controllare 
+	if [[ $file =~ _R1_ ]]; then #controlla il file contenga nel nome R1, da controllare 
+		r2_file="${file/_R1_/_R2_}" #crea una stringa rimpiazzando R1 con R2, da controllare 
 		if [ -f "$r2_file" ]; then #controlla chge esista un file con lo stesso nome
 			file=$(basename "$file") 
 			r2_file=$(basename "$r2_file")

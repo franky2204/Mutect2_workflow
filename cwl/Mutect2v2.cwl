@@ -17,7 +17,7 @@ baseCommand: ["bash", "/scripts/Mutect2.sh"]
 
 inputs:
   bam_index:
-    type: File []
+    type: File[]
     inputBinding:
       position: 3
     secondaryFiles:
