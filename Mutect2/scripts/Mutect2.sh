@@ -9,4 +9,4 @@ for arg in "${args[@]}"; do
     final_string+="-I $arg "
 done
 
-gatk Mutect2 $final_string -R $genome -O Muteq_final_resoult.vcf.gz --native-pair-hmm-threads $threads
+gatk Mutect2 $final_string -R $genome -O Muteq_final_resoult.vcf.gz --native-pair-hmm-threads $threads --max-reads-per-alignment-start 5000

@@ -24,4 +24,5 @@ outputs:
       glob: "results.tsv"
   results_trascript:
     type: File
-    outputBinding: "results_transcript.tsv"
+    outputBinding: 
+      glob: "results_transcript.tsv"

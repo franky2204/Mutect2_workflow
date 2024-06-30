@@ -15,10 +15,10 @@ inputs:
 outputs:
     results:
       type: File
-      outputSource: filter_vcf/vcf_filtered
+      outputSource: final_results/results
     results_trascript:
       type: File
-      outputSource: filter_vcf/vcf_filtered_trascript   
+      outputSource: final_results/results_trascript   
  
 steps:
 

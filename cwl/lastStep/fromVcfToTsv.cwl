@@ -3,6 +3,10 @@ class: CommandLineTool
 
 requirements:
   InlineJavascriptRequirement: {}
+  InitialWorkDirRequirement: 
+    listing:
+      - entry: $(inputs.mutect_fused)
+        writable: True
 
 hints:
   DockerRequirement:

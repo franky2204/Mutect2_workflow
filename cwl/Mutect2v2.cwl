@@ -2,9 +2,6 @@
 cwlVersion: v1.2
 class: CommandLineTool
 
-doc: |
-  Mutect2 is a somatic SNP and indel caller that combines the DREAM challenge-winning somatic genotyping engine from the original MuTect (Cibulskis et al., 2013) with the assembly-based machinery of HaplotypeCaller.
-
 requirements:
   InlineJavascriptRequirement: {}
   InitialWorkDirRequirement:
@@ -20,9 +17,7 @@ baseCommand: ["bash", "/scripts/Mutect2.sh"]
 
 inputs:
   bam_index:
-    type:  
-      type: array
-      items: File
+    type: File []
     inputBinding:
       position: 3
     secondaryFiles:
@@ -61,4 +56,3 @@ outputs:
     type: File
     outputBinding:
       glob: "Muteq_final_resoult.vcf.gz.tbi"
-

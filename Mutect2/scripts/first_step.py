@@ -1,6 +1,7 @@
 from tqdm import tqdm
 from collections import defaultdict
 import csv
+import sys
 
 elements = defaultdict(list)
 patients = []
@@ -13,7 +14,7 @@ patients = []
 # FORMAT 8
 # PATIENTS 9:
 
-with open('filtered_res.tsv', 'r') as file:
+with open(sys.argv[1], 'r') as file:
     for line in tqdm(file):
         tmp = {}
         if not line.startswith('##'):

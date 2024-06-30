@@ -5,7 +5,7 @@ hints:
   DockerRequirement:
     dockerPull: fpant/gatk
 
-baseCommand: ["python", "/scripts/fist_step.py"]
+baseCommand: ["python", "/scripts/first_step.py"]
 
 inputs:
   mutect_tsv:

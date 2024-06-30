@@ -1,22 +1,21 @@
 sam_input:
   class: File
-  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/input/2201.sam
+  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/1201/1201.sam
 genome: 
   class: File
   path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/hg38/hg38.fa
 threads: 10
 sam_add:
   class: File
-  path: /media/francesco/Volume/Work/gatk/outputs/2201_GN_FU3_add.sam
+  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/1201/1201_sam_add.sam
 bam_output:
   class: File
-  path: /media/francesco/Volume/Work/gatk/outputs/2201_GN_FU3_add.bam
+  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/1201/1201_sam_add.bam
 bam_sorted:
   class: File  
-  path: /media/francesco/Volume/Work/gatk/outputs/2201_GN_FU3_add_add_sort.bam
+  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/1201/1201_sort.bam
 bam_index: 
-  #- {class: File, path: /home/francesco/Desktop/mutect/first2002/2002_GN_DIAG_ATCACGAC_sam_add_sort.bam}
-  - {class: File, path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/mid/416_sam_add_sort.bam}
+  - {class: File, path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/1201/1201_sam_add_sort.bam}
  
 mutect_vcf:
   - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_1.vcf.gz}
@@ -37,7 +36,7 @@ mutect_vcf_unfilterd:
 
 mutect_fused:
   class: File
-  path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/output/Muteq_final_result.vcf
+  path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/filtered_res.vcf
 human_grch38:
   class: File
-  path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/mutect/hg38/hg38.fa
+  path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/Homo_sapiens.GRCh38.110.gtf
