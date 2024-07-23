@@ -5,7 +5,7 @@ hints:
   DockerRequirement:
     dockerPull: fpant/gatk
 
-baseCommand: ["bcftools", "view", "-i", "MIN(FMT/DP)>20"]
+baseCommand: ["bcftools", "view", "-i", "DP>20"]
 
 inputs:
   mutect_vcf:

@@ -18,15 +18,15 @@ bam_index:
   - {class: File, path: /media/francesco/9b3ea93f-d08b-45a6-a908-58bd4d7bac34/1201/1201_sam_add_sort.bam}
  
 mutect_vcf:
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_1.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_2.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_3.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_4.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_5.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_6.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_7.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_8.vcf.gz}
-  - {class: File, path: /media/francesco/Volume/Work/gatk/outputs/last_step/mutect_final/input/Muteq_final_result_9.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_1.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_2.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_3.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_4.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_5.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_6.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_7.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_8.vcf.gz}
+  - {class: File, path: /media/francesco/Volume/TrimmedPaviaOut/ALL/Muteq_final_resoult_9.vcf.gz}
 
 
 mutect_vcf_unfilterd: 

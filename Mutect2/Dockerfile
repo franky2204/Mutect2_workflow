@@ -1,5 +1,5 @@
 FROM broadinstitute/gatk
-LABEL maintainer="pandafake589@gmail.com"
+LABEL maintainer="francesco.pantini@edu.unito.it"
 
 WORKDIR /
 RUN apt-get update && \
