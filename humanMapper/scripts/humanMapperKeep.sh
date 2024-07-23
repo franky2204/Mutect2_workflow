@@ -10,7 +10,7 @@ output_file="$patient$name_index"
 
 time {
 	bwa mem -t $threads $index $1 $2 > ${output_file}_pe.sam
-    samtools fastq -F 4 -@ $threads ${output_file}_pe.sam > ${output_file}_mapped.fastq
+    samtools fastq -F 4 -f 8 -@ $threads ${output_file}_pe.sam > ${output_file}_mapped.fastq
 	python3 /scripts/divide_fastq.py ${output_file}_mapped.fastq ${output_file}_mapped_R1.fastq ${output_file}_mapped_R2.fastq
 
 	pigz -p $threads ${output_file}_mapped_R1.fastq
